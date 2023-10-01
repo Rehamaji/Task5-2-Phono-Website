@@ -72,7 +72,6 @@
 .bghov:hover {
     background-color: red !important;
 }
-
 /*----------------------------------------------------------------------*/
 .nav-link {
     color: black !important;
@@ -107,7 +106,9 @@
     overflow: hidden;
     height: 100vh; /* Adjust the height as needed */
 }
-
+.h100{
+    height: 100vh;
+}
 /* Style the carousel container */
 .carousel-container {
     position: absolute;
@@ -152,6 +153,9 @@
 .mr3 {
     padding-right: 20px;
 }
+.mr-auto {
+    margin:auto !important;
+}
 
 .w100 {
     width: 100%;
@@ -186,11 +190,22 @@
 .w35 {
     width: 30%;
 }
+.w80px {
+    width: 80px !important;
+}
 
 /*-----------------------------------border-radius -----------------------------------*/
 .radius30 {
     border-radius: 30px !important;
 }
+
+.border-none{
+    border: 0 !important;
+}
+
+.border-b{
+border-bottom: 1px solid gray}
+
 
 /*-----------------------------------Pos-----------------------------------*/
 .d-flex {
@@ -243,7 +258,11 @@
     .f80 {
         font-size: 0.7rem;
     }
-    .w30-lg {  width: 60% !important;}
+
+    .w30-lg {
+        width: 60% !important;
+    }
+
     .text-xl-start {
 
         text-align: center !important;
@@ -256,7 +275,8 @@
         max-height: 350px;
         overflow-y: scroll;
     }
-    .f4{
+
+    .f4 {
         font-size: 1.5rem;
     }
 
@@ -273,10 +293,13 @@
     .f80 {
         font-size: 0.7rem;
     }
-    .btn-lg{
+
+    .btn-lg {
         font-size: .8rem !important;
     }
-}@media screen and (max-width: 400px) {
+}
+
+@media screen and (max-width: 400px) {
     .f80 {
         font-size: 0.6rem;
     }
