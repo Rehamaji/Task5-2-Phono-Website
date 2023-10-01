@@ -193,6 +193,9 @@
 .w80px {
     width: 80px !important;
 }
+.w180px {
+    width: 180px !important;
+}
 
 /*-----------------------------------border-radius -----------------------------------*/
 .radius30 {
@@ -204,14 +207,17 @@
 }
 
 .border-b{
-border-bottom: 1px solid gray}
+border-bottom: 1px solid #e2e2e2
+}
 
 
 /*-----------------------------------Pos-----------------------------------*/
 .d-flex {
     display: flex;
 }
-
+.justify-content-md-around-1{
+    justify-content: space-around;
+}
 /*-----------------------------------submenu-----------------------------------*/
 .change ul {
     list-style: none !important;
