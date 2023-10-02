@@ -72,6 +72,7 @@
 .bghov:hover {
     background-color: red !important;
 }
+
 /*----------------------------------------------------------------------*/
 .nav-link {
     color: black !important;
@@ -106,9 +107,11 @@
     overflow: hidden;
     height: 100vh; /* Adjust the height as needed */
 }
-.h100{
+
+.h100 {
     height: 100vh;
 }
+
 /* Style the carousel container */
 .carousel-container {
     position: absolute;
@@ -153,8 +156,9 @@
 .mr3 {
     padding-right: 20px;
 }
+
 .mr-auto {
-    margin:auto !important;
+    margin: auto !important;
 }
 
 .w100 {
@@ -190,11 +194,20 @@
 .w35 {
     width: 30%;
 }
+
 .w80px {
     width: 80px !important;
 }
+
 .w180px {
     width: 180px !important;
+}
+.ima{
+    max-width: 85px;
+    object-fit: cover;
+    height: auto;
+    padding-top: 5%;
+    margin-right: 10%;
 }
 
 /*-----------------------------------border-radius -----------------------------------*/
@@ -202,12 +215,12 @@
     border-radius: 30px !important;
 }
 
-.border-none{
+.border-none {
     border: 0 !important;
 }
 
-.border-b{
-border-bottom: 1px solid #e2e2e2
+.border-b {
+    border-bottom: 1px solid #e2e2e2
 }
 
 
@@ -215,9 +228,11 @@ border-bottom: 1px solid #e2e2e2
 .d-flex {
     display: flex;
 }
-.justify-content-md-around-1{
+
+.justify-content-md-around-1 {
     justify-content: space-around;
 }
+
 /*-----------------------------------submenu-----------------------------------*/
 .change ul {
     list-style: none !important;
@@ -247,6 +262,52 @@ border-bottom: 1px solid #e2e2e2
     padding: .5em;
 / / box-shadow: 0 3 em 6 px rgba(0, 0, 0, .23);
 }
+
+/*------------------------------dot section----------------------------*/
+/*
+.parent {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: auto;
+    left: auto;
+}
+.a {
+    text-decoration: none;
+    transition:all .3s linear;
+}
+
+.line {
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    font-size: 0;
+}
+*/
+
+/*.dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}*/
+/*
+.child:after{
+content: "";
+background-color: black;
+left: 50%;
+width: 1px;
+height: 0%;
+position: absolute;
+bottom: 100%;}
+*/
+
+/*------------------------------Media query----------------------------*/
 
 @media screen and (min-width: 993px) {
 
@@ -285,7 +346,12 @@ border-bottom: 1px solid #e2e2e2
     .f4 {
         font-size: 1.5rem;
     }
-
+    .center-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 }
 
 @media screen and (max-width: 888px) {
