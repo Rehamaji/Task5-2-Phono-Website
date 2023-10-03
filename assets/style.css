@@ -147,6 +147,21 @@
     background-color: white;
 }
 
+/* Overlay style */
+/*.bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(138,138,138, 0.4); !* Black with 40% opacity *!
+    !*
+
+    background-color: rgba(0, 0, 255, 0.4); !* Adjust the opacity (0.5 for 50% opacity) *!
+    *!
+}*/
+
 /*-----------------------------------Margin-----------------------------------*/
 .m-lr-5 {
     margin-right: 5%;
@@ -171,6 +186,9 @@
 
 .w30 {
     width: 30%;
+}
+.mr4{
+    margin: 4% !important;
 }
 
 /*-----------------------------------Padding-----------------------------------*/
@@ -202,7 +220,13 @@
 .w180px {
     width: 180px !important;
 }
-.ima{
+
+.wh100 {
+    width: 100%;
+    height: 100%;
+}
+
+.ima {
     max-width: 85px;
     object-fit: cover;
     height: auto;
@@ -210,6 +234,52 @@
     margin-right: 10%;
 }
 
+/*background*/
+.bg {
+    background-image: url('//phono-demo.myshopify.com/cdn/shop/files/footer_ad0f20f1-29b5-4188-8127-a6667ac6aea9_1920X_1.jpg?v=1621342028&width=1920');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   // height: 100vh;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    /*  text-align: center;*/
+    margin: auto;
+    color: #fff; /* Text color on top of the hero image */
+}
+
+.card-header a:after {
+    content: "+";
+    position: absolute;
+    color: white;
+    right: 37px;
+    top: -2%;
+    transition: all 1s ease-in-out;
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: auto;
+    font-size: 40px;
+}
+
+.color-white {
+    color: white !important;
+}
+
+.fs14 {
+    font-size: 1.4rem !important;
+}
+
+/* Remove background color from .accordion-item */
+.card {
+    background-color: transparent !important; /* or background-color: initial; */
+}
+
+/* If you want to remove background color from the entire accordion */
+/*#accordion {
+    background-color: transparent; !* or background-color: initial; *!
+}*/
 /*-----------------------------------border-radius -----------------------------------*/
 .radius30 {
     border-radius: 30px !important;
@@ -231,6 +301,10 @@
 
 .justify-content-md-around-1 {
     justify-content: space-around;
+}
+
+.z-index {
+    z-index: 1;
 }
 
 /*-----------------------------------submenu-----------------------------------*/
@@ -264,38 +338,119 @@
 }
 
 /*------------------------------dot section----------------------------*/
-/*
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
 .parent {
     position: relative;
 }
 
-.child {
+.vertical-line {
+    display: inline-block;
+    border-left: 2px solid black;
+    margin: 0 10px;
+
+}
+
+.h-13 {
+    height: 200px;
+}
+
+.h-24 {
+    height: 100px;
+}
+
+.pos-abs-1 {
+    position: absolute;
+    top: 55%;
+    left: 88%;
+}
+
+.child1 {
     position: absolute;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: auto;
-    left: auto;
+/ / top: 55 %;
+    left: 88%;
 }
-.a {
-    text-decoration: none;
-    transition:all .3s linear;
+
+.pos-abs-2 {
+    position: absolute;
+    top: 55%;
+    left: 60%;
 }
+
+.child2 {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 60%;
+}
+
+.pos-abs-3 {
+    position: absolute;
+    top: 55%;
+    left: 14%;
+}
+
+.child3 {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 14%;
+}
+
+.pos-abs-4 {
+    position: absolute;
+    top: 55%;
+    left: 37%;
+}
+
+.child4 {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 37%;
+}
+
+.img-size {
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+.con {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/*test*/
+
+/*
 
 .line {
     width: 12px;
     height: 12px;
     line-height: 12px;
     font-size: 0;
-}
-*/
-
-/*.dot{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
 }*/
+
 /*
 .child:after{
 content: "";
@@ -346,6 +501,7 @@ bottom: 100%;}
     .f4 {
         font-size: 1.5rem;
     }
+
     .center-image {
         display: flex;
         justify-content: center;
