@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 /*-----------------------------------Font-----------------------------------*/
@@ -147,21 +147,6 @@
     background-color: white;
 }
 
-/* Overlay style */
-/*.bg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(138,138,138, 0.4); !* Black with 40% opacity *!
-    !*
-
-    background-color: rgba(0, 0, 255, 0.4); !* Adjust the opacity (0.5 for 50% opacity) *!
-    *!
-}*/
-
 /*-----------------------------------Margin-----------------------------------*/
 .m-lr-5 {
     margin-right: 5%;
@@ -177,7 +162,7 @@
 }
 
 .w100 {
-    width: 100%;
+    width: 100% !important;
 }
 
 .w50 {
@@ -187,7 +172,8 @@
 .w30 {
     width: 30%;
 }
-.mr4{
+
+.mr4 {
     margin: 4% !important;
 }
 
@@ -233,14 +219,30 @@
     padding-top: 5%;
     margin-right: 10%;
 }
-
+/*Shop Now*/
+.bg-ShopNow {
+    background-image: url('//phono-demo.myshopify.com/cdn/shop/files/footer_ad0f20f1-29b5-4188-8127-a6667ac6aea9_1920X_1.jpg?v=1621342028&width=1920');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    color: #fff; /* Text color on top of the hero image */
+    display: flex;
+    /* Create a semi-transparent overlay */
+    position: relative;
+}
 /*background*/
 .bg {
     background-image: url('//phono-demo.myshopify.com/cdn/shop/files/footer_ad0f20f1-29b5-4188-8127-a6667ac6aea9_1920X_1.jpg?v=1621342028&width=1920');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-   // height: 100vh;
+// height: 100vh;
     max-width: 100vw;
     justify-content: center;
     align-items: center;
@@ -248,7 +250,6 @@
     margin: auto;
     color: #fff; /* Text color on top of the hero image */
 }
-
 .card-header a:after {
     content: "+";
     position: absolute;
@@ -276,10 +277,6 @@
     background-color: transparent !important; /* or background-color: initial; */
 }
 
-/* If you want to remove background color from the entire accordion */
-/*#accordion {
-    background-color: transparent; !* or background-color: initial; *!
-}*/
 /*-----------------------------------border-radius -----------------------------------*/
 .radius30 {
     border-radius: 30px !important;
@@ -292,7 +289,6 @@
 .border-b {
     border-bottom: 1px solid #e2e2e2
 }
-
 
 /*-----------------------------------Pos-----------------------------------*/
 .d-flex {
@@ -371,6 +367,14 @@
     top: 55%;
     left: 88%;
 }
+/*.img1{
+    position: relative;
+}*/
+.card1{
+    position: absolute;
+    top: 95%;
+    margin: auto;
+}
 
 .child1 {
     position: absolute;
@@ -378,7 +382,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-/ / top: 55 %;
     left: 88%;
 }
 
@@ -439,29 +442,113 @@
     margin: auto;
     margin-bottom: 50px;
 }
+.m-card {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+}
+.m-card-dot {
+    background-color: black;
+}
+.m-card-dot span {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: black;
+}
+.m-card1 {
+    left: 88%;
+    transform: translate(-61%, -88%);
+}
+.m-card2 {
+    left: 60%;
+    transform: translate(-61%, -60%);
+}
+.m-card {
+    top: 57%;
+}
+.m-card-content {
+    margin: 0;
+    padding: 0;
+}
+@media screen and (min-width: 991px) and (max-width: 1540px)
+.m-card-content:after {
+    top: -91%;
+}
+.m-card-content-2:after {
+    height: 200px;
+}
+.m-card-content-1:after {
+    height: 100px;
+}
+.m-card-content:after {
+    content: "";
+    background-color: black;
+    left: 50%;
+    width: 1px;
+    position: absolute;
+    bottom: 100%;
+}
+.m-card-content-2 {
+    top: 200px;
+}
+.m-card-content-1 {
+    top: 100px;
+}
+.m-card-content {
+    position: absolute;
+    padding: 3rem;
+    transition: all .3s linear;
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+}
+@media only screen and (max-width: 1199px) {
+    .m-card-content {
+        width: 275px;
+        padding: 1.25em;
+    }
+}
+@media (max-width: 1540px) {
+    .m-card-content {
+        width: 300px;
+        padding: 1.5em;
+    }
+}
+.m-cards-parent {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.m-card-content img {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    text-align: center;
+}
+.m-card-content a {
+    text-decoration: none;
+}
 
-/*test*/
-
-/*
-
-.line {
-    width: 12px;
-    height: 12px;
-    line-height: 12px;
-    font-size: 0;
-}*/
-
-/*
-.child:after{
-content: "";
-background-color: black;
-left: 50%;
-width: 1px;
-height: 0%;
-position: absolute;
-bottom: 100%;}
-*/
-
+@media screen and (min-width: 750px) {
+    .m-section {
+        padding-top: 36px;
+        padding-bottom: 308px;
+    }
+}
 /*------------------------------Media query----------------------------*/
 
 @media screen and (min-width: 993px) {
@@ -516,7 +603,6 @@ bottom: 100%;}
     }
 
 }
-
 @media screen and (max-width: 500px) {
     .f80 {
         font-size: 0.7rem;
