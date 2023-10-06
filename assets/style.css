@@ -6,7 +6,7 @@
     font-size: 0.9rem;
 }
 
-/*-----------------------------------Font-----------------------------------*/
+/*-----------------------------------Font Weight-----------------------------------*/
 .f900 {
     font-weight: 900 !important;
 }
@@ -19,6 +19,7 @@
 .fw-600 {
     font-weight: 600 !important;
 }
+/*-----------------------------------Font Size-----------------------------------*/
 
 .f80 {
     font-size: 5rem;
@@ -26,7 +27,6 @@
 .f4 {
     font-size: 2.2rem;
 }
-
 .pad {
     border: 4px solid white !important;
     padding: 1% 5% !important;
@@ -36,7 +36,11 @@
     border: 4px solid black !important;
     padding: 1% 5% !important;
 }
-
+/*-----------------------------------Navpar Section-----------------------------------*/
+#nav-fixed{
+        position: fixed;
+        z-index: 100;
+}
 .txt1-hero {
     display: flex !important;
     align-items: center !important;
@@ -57,11 +61,26 @@
     height: 100% !important;
     color: black !important;
 }
-
+#flags{
+    max-height:300px ;
+}
+/*open dropdown of pages on hover*/
+.dropdown:hover .onStand{
+    display: flex;
+    flex-direction: column;
+}
+li{
+    list-style: none;
+}
+/*heigth for dorpdown collection*/
+.hDrop{
+height:200px ;
+}
 /*-----------------------------------nav tabs---------------------------------back--*/
 .active {
     color: red !important;
 }
+
 
 /*-----------------------------------Hover-----------------------------------*/
 .nav-link:hover {
@@ -233,10 +252,6 @@
     padding-left: 5%;
 }
 
-.pr20 {
-    padding-right: 20px;
-}
-
 .p-all-2 {
     padding: 2% !important;
 }
@@ -262,6 +277,12 @@
 
 .w180px {
     width: 180px !important;
+}
+.w2rem{
+    width: 1300px !important;
+}
+.left-value{
+    left:-492px
 }
 
 .wh100 {
@@ -301,7 +322,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-/ / height: 100 vh;
+// height: 100 vh;
  //   max-width: 100vw;
     max-width:fit-content;
     justify-content: center;
@@ -406,7 +427,7 @@
     border-radius: 0;
     border: none;
     padding: .5em;
-/ / box-shadow: 0 3 em 6 px rgba(0, 0, 0, .23);
+// box-shadow: 0 3 em 6 px rgba(0, 0, 0, .23);
 }
 
 /*------------------------------dot section----------------------------*/
@@ -607,18 +628,36 @@
     width: 300px;
 }
 
-@media only screen and (max-width: 1199px) {
+@media (min-width: 1200px) {
+    .m-card-content {
+        width: 300px;
+        padding: 1.5em;
+    }
+}
+@media (min-width: 992px) {
     .m-card-content {
         width: 275px;
         padding: 1.25em;
     }
 }
-
-@media (max-width: 1540px) {
+@media (min-width: 768px) {
     .m-card-content {
-        width: 300px;
-        padding: 1.5em;
+        width: 250px;
+        padding: 1em;
     }
+
+}
+@media (min-width: 500px) {
+    .m-card-content {
+        width: 200px;
+        padding: 0.75em;
+    }
+}
+@media (max-width: 500px) {
+    .m-card-content {
+        display: none;
+    }
+
 }
 
 .m-cards-parent {
@@ -704,20 +743,16 @@
     margin: auto;
     font-size: 40px;
 }
-.reham{
-
-}
-
 /*------------------------------Media query----------------------------*/
 
 @media screen and (min-width: 993px) {
 
-    .change.show {
+   .change.show {
         display: flex !important;
     }
 
     /*بس وقف عليا تفتح*/
-    .dropdown:hover .change {
+     .dropdown:hover .change {
         display: flex;
     }
 }

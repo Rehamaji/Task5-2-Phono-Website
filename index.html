@@ -35,7 +35,7 @@
     </div>
     <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
+            <li class="nav-item ">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
@@ -74,60 +74,188 @@
         </form>
     </div>
 </div>
+
+<!--LEFT MENU-->
+<div
+        class="offcanvas offcanvas-start text-bg-light"
+        tabindex="-1"
+        id="offcanvasLeftNavbar"
+        aria-labelledby="offcanvasLeftNavbarLabel"
+>
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLeftNavbarLabel">
+            Dark offcanvas
+        </h5>
+        <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+        ></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item ">
+                <a class="nav-link active color-red" aria-current="page" href="#">Home</a>
+            </li>
+            <!--Collection-->
+            <li class="nav-item dropdown">
+
+               <!--List-->
+
+                        <button class=" dropdown-toggle button " type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            Collection
+                        </button>
+
+                        <ul class="dropdown-menu onStand overflow-scroll hDrop" aria-labelledby="dropdownMenuButton1">
+                            <li><ul class= m-lr-5">
+                                <li><a class="dropdown-item" href="#">SSD CARD</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Affinity M20</a></li>
+                                <li><a class="dropdown-item" href="#">Affinity P40 Pro</a></li>
+                                <li><a class="dropdown-item" href="#">PO V40 ThinQ</a></li>
+                                <li><a class="dropdown-item" href="#">Affinity P40 Pro</a></li>
+                            </ul></li>
+                            <li><ul class="m-lr-5">
+                                <li><a class="dropdown-item" href="#">POWER BANKS</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Spots 8 Lite</a></li>
+                                <li><a class="dropdown-item" href="#">Tencho 8.1</a></li>
+                                <li><a class="dropdown-item" href="#">Spots 8 Lite</a></li>
+                                <li><a class="dropdown-item" href="#">Tencho 8.1</a></li>
+                            </ul></li>
+                            <li><ul class="m-lr-5">
+                                <li><a class="dropdown-item" href="#"> EARPHONE </a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Spots Y93 1815</a></li>
+                                <li><a class="dropdown-item" href="#">Tencho F12 Pro</a></li>
+                                <li><a class="dropdown-item" href="#">Spots Y93 1815</a></li>
+                                <li><a class="dropdown-item" href="#">Tencho F12 Pro</a></li>
+                            </ul></li>
+                            <li><ul class="m-lr-5">
+                                <li><a class="dropdown-item" href="#"> ANDROID </a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Tencho 10 Lite</a></li>
+                                <li><a class="dropdown-item" href="#">Tencho 7.3</a></li>
+                                <li><a class="dropdown-item" href="#">Telefonika</a></li>
+                                <li><a class="dropdown-item" href="#">T-Blast</a></li>
+                            </ul></li>
+                            <li><ul class="m-lr-5">
+                                <div class="dt-sc-mega_menu text-center">
+                                    <img
+                                            srcset="//phono-demo.myshopify.com/cdn/shop/files/bg-1.png?v=1613702304&amp;width=165 165w,//phono-demo.myshopify.com/cdn/shop/files/bg-1.png?v=1613702304&amp;width=360 360w,//phono-demo.myshopify.com/cdn/shop/files/bg-1.png?v=1613702304&amp;width=535 535w,//phono-demo.myshopify.com/cdn/shop/files/bg-1.png?v=1613702304&amp;width=750 750w,//phono-demo.myshopify.com/cdn/shop/files/bg-1.png?v=1613702304 1023w"
+                                            src="//phono-demo.myshopify.com/cdn/shop/files/bg-1.png?v=1613702304&amp;width=1500"
+                                            sizes="(min-width: 1300px) 600px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                                            alt="" loading="lazy" width="234" height="233">
+                                    <div class="dt-sc-details"></div>
+                                </div>
+                            </ul></li>
+                        </ul>
+                <!--End list-->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+            <!--End Collection-->
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Android</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Accessories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Memory & Storage</a>
+            </li>
+
+        </ul>
+        <div class="nav-item">
+            <div class="dropdown">
+                <button class=" dropdown-toggle button " type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                </button>
+                <ul class="dropdown-menu onStand" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">About us</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Contact us</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Faq's</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 <!--End Offcanvas navbar-->
 <!--Navpar-->
-<nav class="navbar navbar-expand-xl navbar-light bg-light row m-lr-5 w100 ">
+<nav id="nav-fixed" class="navbar navbar-expand-xl navbar-light bg-light row m-lr-5 w100">
     <div class="container-fluid ptb">
-        <a href="/" class="header__heading-link link link--text focus-inset"><img
+        <a href="/" class="header__heading-link link link--text focus-inset order-xl-1 order-sm-1"><img
                 srcset="//phono-demo.myshopify.com/cdn/shop/files/logo.png?v=1620470788&amp;width=250 1x, //phono-demo.myshopify.com/cdn/shop/files/logo.png?v=1620470788&amp;width=500 2x"
                 src="//phono-demo.myshopify.com/cdn/shop/files/logo.png?v=1620470788&amp;width=250" loading="lazy"
                 class="header__heading-logo" width="129" height="45" alt="Phono (password: buddha)"></a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler "   type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasLeftNavbar"
+                aria-controls="offcanvasLeftNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarText"> <!--col-xl-6-->
+        <div class="collapse navbar-collapse order-xl-2 order-sm-3" id="navbarText"> <!--col-xl-6-->
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <li class="nav-item ">
+                    <a class="nav-link active color-red" aria-current="page" href="#">Home</a>
                 </li>
                 <!--Collection-->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                        aria-expanded="false">
                         Collection
                     </a>
-                    <div class="dropdown-menu change" aria-labelledby="navbarDropdown">
-                        <ul class="pr20">
+                    <div class="dropdown-menu change w2rem left-value" aria-labelledby="navbarDropdown">
+                        <ul class= m-lr-5">
                             <li><a class="dropdown-item" href="#">SSD CARD</a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Affinity M20</a></li>
                             <li><a class="dropdown-item" href="#">Affinity P40 Pro</a></li>
                             <li><a class="dropdown-item" href="#">PO V40 ThinQ</a></li>
                             <li><a class="dropdown-item" href="#">Affinity P40 Pro</a></li>
                         </ul>
-                        <ul class="pr20">
+                        <ul class="m-lr-5">
                             <li><a class="dropdown-item" href="#">POWER BANKS</a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Spots 8 Lite</a></li>
                             <li><a class="dropdown-item" href="#">Tencho 8.1</a></li>
                             <li><a class="dropdown-item" href="#">Spots 8 Lite</a></li>
                             <li><a class="dropdown-item" href="#">Tencho 8.1</a></li>
                         </ul>
-                        <ul class="pr20">
+                        <ul class="m-lr-5">
                             <li><a class="dropdown-item" href="#"> EARPHONE </a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Spots Y93 1815</a></li>
                             <li><a class="dropdown-item" href="#">Tencho F12 Pro</a></li>
                             <li><a class="dropdown-item" href="#">Spots Y93 1815</a></li>
                             <li><a class="dropdown-item" href="#">Tencho F12 Pro</a></li>
                         </ul>
-                        <ul class="pr20">
+                        <ul class="m-lr-5">
                             <li><a class="dropdown-item" href="#"> ANDROID </a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Tencho 10 Lite</a></li>
                             <li><a class="dropdown-item" href="#">Tencho 7.3</a></li>
                             <li><a class="dropdown-item" href="#">Telefonika</a></li>
                             <li><a class="dropdown-item" href="#">T-Blast</a></li>
                         </ul>
-                        <ul class="pr20">
+                        <ul class="m-lr-5">
                             <div class="dt-sc-mega_menu text-center">
                                 <img
                                         srcset="//phono-demo.myshopify.com/cdn/shop/files/bg-1.png?v=1613702304&amp;width=165 165w,//phono-demo.myshopify.com/cdn/shop/files/bg-1.png?v=1613702304&amp;width=360 360w,//phono-demo.myshopify.com/cdn/shop/files/bg-1.png?v=1613702304&amp;width=535 535w,//phono-demo.myshopify.com/cdn/shop/files/bg-1.png?v=1613702304&amp;width=750 750w,//phono-demo.myshopify.com/cdn/shop/files/bg-1.png?v=1613702304 1023w"
@@ -157,12 +285,12 @@
                 </li>
             </ul>
             <div class="nav-item">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle button color-red" type="button"
+                <div class="dropdown ">
+                    <button class="btn btn-secondary dropdown-toggle button " type="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                         Pages
                     </button>
-                    <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                    <ul class="dropdown-menu onStand" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="#">About us</a></li>
                         <li>
                             <hr class="dropdown-divider">
@@ -180,7 +308,7 @@
                 </div>
             </div>
         </div>
-        <div class="icons  d-flex">
+        <div class="icons d-flex order-xl-3 order-sm-2 ">
             <i class="fa-solid fa-user padding hov"></i>
             <div
                     type="button"
@@ -192,18 +320,18 @@
             <i class="fa-solid fa-magnifying-glass padding hov"></i>
 
             <div class="rel"> <!--nav-item-->
-                <div class="dropdown">
+                <div class="dropdown ">
                     <button class="btn btn-secondary dropdown-toggle button" type="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="padding" id="country">LB</span>
                         <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/flags/4x3/fk.svg"
                              alt="" class="w13" id="flg"/>
                     </button>
-                    <ul class="dropdown-menu" id="flags">
+                    <ul class="dropdown-menu overflow-scroll" id="flags">
+                        <!--Code From Js-->
                     </ul>
                 </div>
             </div>
-
         </div>
     </div>
 </nav>
@@ -424,11 +552,11 @@
 <!--Start Section:INNOVATIVE QUALITIES & FEATURES-->
 <section class="m-lr-5 pt-5 d-flex flex-column">
     <h1 class="text-center">INNOVATIVE QUALITIES & FEATURES</h1>
-    <p class="card-text text-center pt-3"><small class="text-muted">SHOW YOURS TO THE WORLD</small></p>
+    <p class="card-text text-center pt-3"><small class="text-muted ">SHOW YOURS TO THE WORLD</small></p>
     <!-- When the screen is large display the three section in front of us-->
     <div class="row justify-content-around pt-5 justify-content-between ">
         <!--justify-content-lg-between  justify-content-md-around-1-->
-        <div class="card mb-3 card border-none col-xl-4 col-lg-6  order-xl-1 order-lg-2 order-md-2 order-sm-2"
+        <div class="card mb-3 card border-none col-xl-4 col-md-6  order-xl-1  order-sm-2"
              style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-lg-8 col-md-8 col-sm-12 order-md-2 order-lg-1 order-sm-2">
@@ -479,7 +607,7 @@
                 </div>
             </div>
         </div>
-        <div class="card border-none           col-xl-3 col-lg-12 order-xl-2 order-lg-1 order-md-1 order-sm-1 ">
+        <div class="card border-none           col-xl-3 col-lg-12 order-xl-2  order-sm-1 ">
             <!--style="width: 18rem;"-->
             <img srcset="//phono-demo.myshopify.com/cdn/shop/files/center-img_eb064c43-efaf-4d56-90df-f89acfdf85fe.png?v=1613704453&amp;width=165 165w,//phono-demo.myshopify.com/cdn/shop/files/center-img_eb064c43-efaf-4d56-90df-f89acfdf85fe.png?v=1613704453&amp;width=360 360w,//phono-demo.myshopify.com/cdn/shop/files/center-img_eb064c43-efaf-4d56-90df-f89acfdf85fe.png?v=1613704453 381w"
                  src="//phono-demo.myshopify.com/cdn/shop/files/center-img_eb064c43-efaf-4d56-90df-f89acfdf85fe.png?v=1613704453&amp;width=1500"
@@ -487,7 +615,7 @@
                  class="mr-auto"
                  alt="" loading="lazy" width="381" height="551">
         </div>
-        <div class="card mb-3 card border-none col-xl-4 col-lg-6  order-xl-3 order-lg-3 order-md-3 order-sm-3"
+        <div class="card mb-3 card border-none col-xl-4 col-md-6  order-xl-3  order-sm-3"
              style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-2 d-flex">
@@ -550,9 +678,9 @@
 <!--Start Section:SEE WHY CUSTOMERS LOVE THE OUR MOBILES-->
 <div class="m-lr-5 bg pt-5 pb-5">
     <div class="w-100 text-center">
-        <h1 class="  color-white">SEE WHY CUSTOMERS LOVE THE OUR MOBILES</h1>
+        <h1 class="color-white">SEE WHY CUSTOMERS LOVE THE OUR MOBILES</h1>
     </div>
-    <p class="card-text row text-center pt-3 fs14 "><small class="text-muted">SHOW YOURS TO THE WORLD</small></p>
+    <p class="card-text row text-center pt-3 fs14 w100"><small class="text-muted">SHOW YOURS TO THE WORLD</small></p>
     <div class="row w-100">
         <div class="col-lg-5 ">
             <img srcset="//phono-demo.myshopify.com/cdn/shop/files/bg-1.png?v=1613702304&amp;width=165 165w,//phono-demo.myshopify.com/cdn/shop/files/bg-1.png?v=1613702304&amp;width=360 360w,//phono-demo.myshopify.com/cdn/shop/files/bg-1.png?v=1613702304&amp;width=535 535w,//phono-demo.myshopify.com/cdn/shop/files/bg-1.png?v=1613702304&amp;width=750 750w,//phono-demo.myshopify.com/cdn/shop/files/bg-1.png?v=1613702304 1023w"
@@ -659,9 +787,9 @@
             </span> </a>
         </div>
         <!--to test-->
-      <!--  <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"
-             aria-controls="Slider-template&#45;&#45;15625847996516__4c706270-fe85-4ef6-a38b-ffa04a36f828"
-             aria-disabled="false"><span>  <i class="fa-solid fa-arrow-right bg-black"></i></span></div>-->
+        <!--  <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"
+               aria-controls="Slider-template&#45;&#45;15625847996516__4c706270-fe85-4ef6-a38b-ffa04a36f828"
+               aria-disabled="false"><span>  <i class="fa-solid fa-arrow-right bg-black"></i></span></div>-->
         <!--  <span class="input-group-text Buttoncycle radius30 bg-black color-white p-all-2"
                 id="inputGroup-sizing-lg">
                           <i class="fa-solid fa-arrow-right"></i>
@@ -677,7 +805,8 @@
             <p class="card-text text-center pt-3 fw-600 fs14 color-white">
                 SUBSCRIBE NOW</p>
             <h1 class="text-center pt-5">GET OUR UPDATES ALWAYS FAST</h1>
-            <p class="card-text text-center pt-3 fw-600 pt-5 fs14 color-white">YOUR PERSONAL DATA WILL ALWAYS BE SAFE</p>
+            <p class="card-text text-center pt-3 fw-600 pt-5 fs14 color-white">YOUR PERSONAL DATA WILL ALWAYS BE
+                SAFE</p>
             <div class="input-group d-flex justify-content-center pt-5">
                 <div class="input-group input-group-lg mb-3 w65 ">
                     <input type="text" class="form-control radius30 pos-relative" placeholder="Recipient's username"
@@ -691,9 +820,9 @@
             <div class="row w100 justify-content-center pt-5">
                 <p class="col-md-1 col-sm-12 block">SEARCH</p>
                 <p class="col-md-2 col-sm-12 block">HELP </p>
-                <p class="col-md-3 col-sm-12 block" >INFORMATION </p>
-                <p class="col-md-3 col-sm-12 block" >PRIVACY POLICY </p>
-                <p class="col-md-2 col-sm-12 " >SHIPPING DETAILS</p>
+                <p class="col-md-3 col-sm-12 block">INFORMATION </p>
+                <p class="col-md-3 col-sm-12 block">PRIVACY POLICY </p>
+                <p class="col-md-2 col-sm-12 ">SHIPPING DETAILS</p>
 
 
             </div>
