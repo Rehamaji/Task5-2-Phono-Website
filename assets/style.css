@@ -276,7 +276,7 @@ height:200px ;
 }
 
 .w180px {
-    width: 180px !important;
+    width: 50% !important;
 }
 .w2rem{
     width: 1300px !important;
@@ -303,6 +303,7 @@ height:200px ;
     background-image: url('//phono-demo.myshopify.com/cdn/shop/files/footer_ad0f20f1-29b5-4188-8127-a6667ac6aea9_1920X_1.jpg?v=1621342028&width=1920');
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     height: 100vh;
     max-width: 100vw;
@@ -321,6 +322,7 @@ height:200px ;
     background-image: url('//phono-demo.myshopify.com/cdn/shop/files/footer_ad0f20f1-29b5-4188-8127-a6667ac6aea9_1920X_1.jpg?v=1621342028&width=1920');
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
 // height: 100 vh;
  //   max-width: 100vw;
@@ -389,8 +391,10 @@ height:200px ;
 
 .Buttoncycle {
     position: absolute;
+ /*   left: 94%;
+    top: 4%;*/
     left: 94%;
-    top: 4%;
+    //top: 5%;
     padding: 1%;
 }
 .block:after {
@@ -457,7 +461,9 @@ height:200px ;
 .h-24 {
     height: 100px;
 }
-
+.h-fit {
+    height: fit-content !important;
+}
 .pos-abs-1 {
     position: absolute;
     top: 55%;
@@ -575,6 +581,14 @@ height:200px ;
     left: 60%;
     transform: translate(-61%, -60%);
 }
+.m-card3 {
+    left: 38%;
+    transform: translate(-61%, -88%);
+}
+.m-card4 {
+    left: 15%;
+    transform: translate(-61%, -88%);
+}
 
 .m-card {
     top: 57%;
@@ -685,51 +699,7 @@ height:200px ;
     }
 }
 
-/*-----------------------------------------------*/
-/*
-.s004 form .inner-form .input-field .btn-search {
-    width: 70px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    background: 0 0;
-    border: 0;
-    padding: 0;
-    cursor: pointer;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    align-items: center;
-}
-.choices__list--dropdown {
-    display: none;
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    top: 100%;
-    margin-top: -1px;
-    border-bottom-left-radius: 2.5px;
-    border-bottom-right-radius: 2.5px;
-    overflow: hidden;
-    word-break: break-all;
-}
-.s004 form .inner-form .input-field .choices .choices__list--dropdown {
-    background: 0 0;
-    font-size: 16px;
-    color: #fff;
-    border: 0;
-    padding: 0 32px;
-}
-*//*------------------------------Media query----------------------------*/
-
-
+/*------------------------------Search----------------------------*/
 .searchbar a:after {
     content: "+";
     position: absolute;
@@ -818,6 +788,12 @@ height:200px ;
 }
 
 /*// Carosuel*/
+@media (max-width: 970px) {
+    .Buttoncycle {
+        left: 92%;
+        top: 9%;
+    }
+}
 @media (max-width: 767px) {
     .carousel-inner .carousel-item > div {
         display: none !important;
@@ -832,8 +808,9 @@ height:200px ;
     }
     .Buttoncycle {
         position: absolute;
-        left: 90%;
-        top: 7%;
+      /*  left: 92%;*/
+        top: 10%;
+        left: 88%;
         padding: 3% !important;
     }
 }
