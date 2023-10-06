@@ -290,6 +290,7 @@ height:200px ;
     height: 100%;
 }
 
+
 .ima {
     max-width: 85px;
     object-fit: cover;
@@ -652,6 +653,9 @@ height:200px ;
     .m-card-content {
         width: 275px;
         padding: 1.25em;
+    }
+    .width60{
+        width: 60% !important;
     }
 }
 @media (min-width: 768px) {
