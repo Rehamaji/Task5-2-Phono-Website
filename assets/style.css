@@ -7,14 +7,8 @@
 }
 
 /*-----------------------------------Font Weight-----------------------------------*/
-.f900 {
-    font-weight: 900 !important;
-}
 .fw-800 {
     font-weight: 800;
-}
-.fw-700 {
-    font-weight: 700;
 }
 .fw-600 {
     font-weight: 600 !important;
@@ -40,10 +34,6 @@
     padding: 1% 5% !important;
 }
 /*-----------------------------------Navpar Section-----------------------------------*/
-#nav-fixed{
-        position: fixed;
-        z-index: 100;
-}
 .txt1-hero {
     display: flex !important;
     align-items: center !important;
@@ -103,19 +93,6 @@ height:200px ;
     font-weight: 700 !important;
     font-size: 1.2rem;
 }
-
-.header {
-    display: grid;
-    grid-template-areas: "left-icon heading icons";
-    grid-template-columns: 1fr 1.3fr 1fr;
-    align-items: center;
-    padding-top: 0rem;
-    width: 100%;
-    left: 0;
-    right: 0;
-    max-width: 100%;
-}
-
 .button {
     border: none !important;
     background-color: white !important;
@@ -135,17 +112,6 @@ height:200px ;
 .h100 {
     height: 100vh;
 }
-
-/* Style the carousel container */
-.carousel-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Place the carousel behind the content */
-}
-
 /* Style the carousel images */
 .carousel-inner img {
     object-fit: cover;
@@ -219,14 +185,6 @@ height:200px ;
 
 .w30 {
     width: 30%;
-}
-
-.mr4 {
-    margin: 4% !important;
-}
-
-.mb17px {
-    margin-bottom: 17px;
 }
 .h300{
     height: 300px !important
@@ -318,12 +276,9 @@ height:200px ;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-// height: 100 vh;
- //   max-width: 100vw;
-    max-width:fit-content;
     justify-content: center;
     align-items: center;
-    /*  text-align: center;*/
+     text-align: center;
     margin: auto;
     color: #fff;
 }
@@ -368,11 +323,6 @@ height:200px ;
 .justify-content-md-around-1 {
     justify-content: space-around;
 }
-
-.z-index {
-    z-index: 1;
-}
-
 /*-----------------------------------Search bar-----------------------------------*/
 
 .Buttoncycle {
@@ -385,9 +335,15 @@ height:200px ;
 }
 .block:after {
     content: "|";
-    position: relative;
-    padding: 5%;
+  //  padding: 5%;
     color: #fff;
+    padding-inline: 15px;
+}
+.cursor {
+    cursor: pointer;
+}
+.transition {
+    transition: 0.5s;
 }
 /*------------------------------Search----------------------------*/
 .searchbar a:after {
@@ -408,11 +364,6 @@ height:200px ;
     list-style: none !important;
     padding: 0 !important;
 }
-
-.change.show {
-    display: flex !important;
-}
-
 /*header*/
 .change li:first-child a {
     font-size: 1.2em !important;
@@ -434,6 +385,7 @@ height:200px ;
 }
 
 /*------------------------------dot section----------------------------*/
+/*
 .dot {
     height: 15px;
     width: 15px;
@@ -442,6 +394,7 @@ height:200px ;
     display: inline-block;
     position: relative;
 }
+*/
 
 .pos-relative {
     position: relative;
@@ -463,17 +416,13 @@ height:200px ;
 .h-fit {
     height: fit-content !important;
 }
-.pos-abs-1 {
-    position: absolute;
-    top: 55%;
-    left: 88%;
-}
-
+/*
 .card1 {
     position: absolute;
     top: 95%;
     margin: auto;
 }
+
 
 .child1 {
     position: absolute;
@@ -528,7 +477,7 @@ height:200px ;
     justify-content: center;
     left: 37%;
 }
-
+*/
 .img-size {
     max-width: 100%;
     object-fit: cover;
@@ -699,18 +648,6 @@ height:200px ;
 }
 /*------------------------------Media query----------------------------*/
 
-@media screen and (min-width: 993px) {
-
-   .change.show {
-        display: flex !important;
-    }
-
-    /*بس وقف عليا تفتح*/
-     .dropdown:hover .change {
-        display: flex;
-    }
-}
-
 @media screen and (max-width: 1200px) {
     .f80 {
         font-size: 0.7rem;
@@ -727,23 +664,46 @@ height:200px ;
 }
 
 @media screen and (max-width: 992px) {
+    /*
 
     .change.show {
         max-height: 350px;
         overflow-y: scroll;
     }
+    */
 
     .f4 {
         font-size: 1.5rem;
     }
-
+/*
     .center-image {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
+    }*/
+    .block:after{
+        display: none !important;
     }
+
 }
+@media screen and (min-width: 993px) {
+   /*
+
+   .change.show {
+        display: flex !important;
+    }
+   */
+
+    /*بس وقف عليا تفتح*/
+     .dropdown:hover .change {
+        display: flex;
+    }
+   /* .block:after{
+        display: none !important;
+    }*/
+}
+
 
 @media screen and (max-width: 888px) {
     .f80 {
@@ -771,7 +731,7 @@ height:200px ;
 
 }
 
-/*// Carosuel*/
+/*------------------------------------------Carousel------------------------------------------*/
 @media (max-width: 970px) {
     .Buttoncycle {
         left: 92%;
@@ -799,7 +759,7 @@ height:200px ;
     }
 }
 
-.carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
+.carousel-inner .carousel-item.active, .carousel-inner /*.carousel-item-next*/, .carousel-inner /*.carousel-item-prev*/ {
     display: flex !important;
 }
 
