@@ -238,7 +238,7 @@ height:200px ;
 }
 
 .wh100 {
-    width: 100%;
+    width: 400px;
     height: 100%;
 }
 
@@ -278,7 +278,7 @@ height:200px ;
     background-size: cover;
     justify-content: center;
     align-items: center;
-     text-align: center;
+   //  text-align: center;
     margin: auto;
     color: #fff;
 }
@@ -598,8 +598,11 @@ height:200px ;
         width: 275px;
         padding: 1.25em;
     }
-    .width60{
-        width: 60% !important;
+    .width60 .wh100{
+        width: 400px !important;
+    }
+    .txt-center{
+        text-align: center !important;
     }
 }
 @media (min-width: 768px) {
